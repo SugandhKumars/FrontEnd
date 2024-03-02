@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav-Items {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  align-items: center;
+}
+#nav-Items p {
+  padding: 3vh;
+}
+#nav-Items i {
+  border-radius: 50%;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+main {
+  margin: 70px;
+}
+h1 {
+  text-transform: uppercase;
+  width: 45%;
+  font-weight: 500;
+  font-size: 40px;
+}
+#last {
+  display: flex;
+  margin-top: 14vh;
+  justify-content: space-between;
+}
+#last p {
+  width: 45%;
+}
+#last ul {
+  /* text-decoration: none; */
+  list-style: none;
+}
+ul li::after {
+  content: ""; /* Required for the pseudo-element to appear */
+  position: absolute; /* Position the pseudo-element relative to its parent */
+  left: 0; /* Position the pseudo-element at the left edge of its parent */
+  bottom: 0; /* Position the pseudo-element at the bottom edge of its parent */
+  width: 100%; /* Make the pseudo-element span the entire width of its parent */
+  height: 1px; /* Set the height of the line */
+  background-color: black; /* Set the color of the line */
+}
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
